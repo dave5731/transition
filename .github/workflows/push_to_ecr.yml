@@ -28,9 +28,9 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build -c release --no-restore
     - name: Test
-      run: dotnet test --no-build -c release --verbosity normal
+      run: dotnet test --no-build --verbosity normal
     - name: Configure AWS credentials 
      # Programmatic authentication to aws
       uses: aws-actions/configure-aws-credentials@v1

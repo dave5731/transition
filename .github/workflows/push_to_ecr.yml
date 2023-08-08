@@ -50,7 +50,6 @@ jobs:
                 ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
                 ECR_REPOSITORY: sample_nodejs_app
                 IMAGE_TAG: nodejs_simple_app
-    - name:  registry name
       run: echo ${{ steps.login-ecr.outputs.registry }}
     - name: final build
       run: |

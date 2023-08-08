@@ -50,12 +50,11 @@ jobs:
                 ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
                 ECR_REPOSITORY: sample_nodejs_app
                 IMAGE_TAG: nodejs_simple_app
-    - name: Image tag name
-       run echo $IMAGE_TAG
+      run: echo $IMAGE_TAG
     - name: ECR registry name
-       run echo ${{ steps.login-ecr.outputs.registry }}
+      run: echo ${{ steps.login-ecr.outputs.registry }}
     - name: Complete registry, repo and name
-       run echo $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TA
+      run: echo $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TA
     - name: final build
       run: |
            docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .

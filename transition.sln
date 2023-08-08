@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "transition", "transition.csproj", "{0AAE1644-1151-45A1-AE2C-3C760F90659D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0AAE1644-1151-45A1-AE2C-3C760F90659D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AAE1644-1151-45A1-AE2C-3C760F90659D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AAE1644-1151-45A1-AE2C-3C760F90659D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AAE1644-1151-45A1-AE2C-3C760F90659D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33E8D93F-A303-4749-AFF6-302F4C60A0EB}
+	EndGlobalSection
+EndGlobal

@@ -6,4 +6,4 @@ FROM mcr.microsoft.com/dotnet/sdk:7.0 as build-env
 # Relayer the .NET SDK, anew with the build output
 FROM mcr.microsoft.com/dotnet/sdk:7.0
 COPY ./bin/Release/net7.0/ ./
-ENTRYPOINT [ "dotnet", "ci_cd_exp.dll" ]
+ENTRYPOINT [ "dotnet", "ci_cd_exp" ]

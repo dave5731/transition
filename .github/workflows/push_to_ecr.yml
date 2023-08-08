@@ -45,10 +45,10 @@ jobs:
       uses: aws-actions/amazon-ecr-login@v1
     - name: Top Level LS
       run: |
-        ls ./var/lib/docker/tmp
+        ls /var/lib/docker/tmp
     - name: Secondary Level LS
       run: |
-        ls .//var/lib/docker/tmp/buildkit-mount832663598
+        ls //var/lib/docker/tmp/buildkit-mount832663598
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v6
       with:

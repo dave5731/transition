@@ -46,7 +46,7 @@ jobs:
             # the docker image, and pushing it to ECR.
       env:
                 ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-                ECR_REPOSITORY: sample_nodejs_app
+                ECR_REPOSITORY: nubix
                 IMAGE_TAG: transition
       run: |
            docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .

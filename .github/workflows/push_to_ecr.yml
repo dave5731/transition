@@ -30,7 +30,7 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --no-build -c release --verbosity normal
     - name: Configure AWS credentials 
      # Programmatic authentication to aws
       uses: aws-actions/configure-aws-credentials@v1
